@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% from 'macros.html' import select_field, filter_music_form %}
+
+
+{% block title %}Shit{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/shit.css') }}">
+{% endblock %}
+
+{% block content %}
+    <h2>Find specific produce</h2>
+    <h3 class="text--gray">
+        Try filtering produce by your needs and see what you can find!
+    </h3>
+    {{ filter_music_form(form=form) }}
+    <div class="produce">
+        {% if song|length %}
+            Products found for selected filters
+        {% else %}
+            <h3 class="text--gray">
+                No products found for selected filters
+            </h3>
+        {% endif %}
+    </div>
+{% endblock %}
