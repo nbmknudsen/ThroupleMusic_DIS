@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+{% endblock %}
+
+{% block content %}
+    <div id="intro">
+        <h1>Welcome to Throuple Music! <br>Feel free to look around</h1>
+    </div>
+{% endblock %}

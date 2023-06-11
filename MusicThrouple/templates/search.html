@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block title %}Search{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/search.css') }}">
+{% endblock %}
+
+{% block content %}
+        <h1>Search for some music!</h1>
+        <form method="post">
+                <p>
+                    <label for="filter"></label>
+                    <input type="text" name="filter"
+                        placeholder="Search for a song, album or artist(s)" required>
+                    </input>
+                    <button id="sub_button" type="submit">Search</button>
+                </p><br>
+                <div class="drop_form">
+                        <label for="filter_music"></label>
+                        <select id="filter_music" name="filter_music">
+                            <option value="0">Select filter:</option>
+                            <option value="song_choice">Song</option>
+                            <option value="artists_choice">Artist(s)</option>
+                            <option value="album_choice">Album</option>
+                        </select>
+                </div>
+        </form>
+        <div id="table-container">
+            <table>
+                {% if not filter %}
+                    <h3>
+                        No music was found for this search
+                    </h3>
+                {% else %}
+                    <tr>
+                        <th>Artists</th>
+                        <th>Album</th>
+                        <th>Song name</th>
+                        <th>Track Number</th>
+                        <th>Release Date</th>
+                    </tr>
+                    {% for row in filter %}
+                            <tr>
+                                {% for cell in row %}
+                                <td>{{ cell }}</td>
+                                {% endfor %}
+                            </tr>
+                    {% endfor %}
+                {% endif %}
+            </table>
+        </div>
+{% endblock %}

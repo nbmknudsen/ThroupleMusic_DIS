@@ -1,0 +1,94 @@
+h1 {
+  color: black;
+  text-align: center;
+}
+
+h3 {
+  color: black;
+  text-align: center;
+}
+
+p {
+  margin:center;
+  text-align: center;
+}
+
+#sub_button {
+  padding: 11px;
+  width: 100px;
+  background:rgb(29, 185, 84);
+  color: white;
+  text-align: center;
+}
+
+#sub_button:hover {
+  background:rgb(19, 118, 54);
+  color: white;
+}
+
+
+.drop_form {
+  width: 479px;
+  margin:auto;
+  margin-top: -1.7%;
+}
+
+
+.drop_form select {
+  position: relative;
+  background: #f1f1f1;
+  box-shadow: 0px 2.5px 5px 0px rgba(0,0,0,0.2);
+}
+
+input { 
+  padding: 12px; 
+  border: solid 1px #E5E5E5; 
+  outline: 0; 
+  font: normal 13px/100% Verdana, Tahoma, sans-serif; 
+  width: 350px; 
+  background: #FFFFFF;
+  box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+  -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+  -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+}
+
+body {
+  background-color: white;
+  font-size: 16px;
+  color: black;
+}
+
+#table-container{
+  padding-top: 2%;
+  /* margin: auto; */
+}
+
+table {
+  border-collapse: collapse;
+  width: 70%;
+  margin: auto;
+}
+
+tr, td{
+  border: 1px solid black;
+  padding: 20px;
+  text-align: center;/*left;*/
+  font-size: 16px;
+}
+
+tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+th {
+  border: 1px solid black;
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+  background-color: rgb(29, 185, 84);
+  color: white;
+}

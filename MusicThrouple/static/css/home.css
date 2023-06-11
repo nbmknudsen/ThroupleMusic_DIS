@@ -1,0 +1,16 @@
+body {
+    background-color: grey;
+    background-image: url("green_music.jpeg");
+    background-repeat: no-repeat;
+    background-size: 1500px auto;
+  }
+  
+h1 {
+    color: black;
+    text-align: center;
+}
+
+div #intro{
+    width: 550px;
+    margin: auto;
+}

@@ -1,0 +1,19 @@
+<div class="topnav" id="myTopnav">
+  <a href="/" id="home">Home</a>
+  <a href="/index" id="index">All data</a>
+  <a href="/add/" id="add">Add Throuple</a>
+  <a href="/search/" id="search">Search</a>
+</div>
+
+  <script>    
+        current_page = document.location.href           
+        if (current_page.match("/search/")) {
+          document.getElementById("search").classList.add("active");
+        } else if (current_page.match("/add/")) {
+          document.getElementById("add").classList.add("active");
+        } else if (current_page.match("/index/")) {
+          document.getElementById("index").classList.add("active");
+        } else if (current_page.match("/")) {
+          document.getElementById("home").classList.add("active");
+        }
+ </script>
